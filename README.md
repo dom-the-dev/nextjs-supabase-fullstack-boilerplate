@@ -9,14 +9,23 @@ Create the enviroment variables with the following command
 cp .env.local.dist .env.local
 ```
 
-Add your keys from your Supabase project.
+Add your keys from your [Supabase](https://app.supabase.io/) project.
+
 ```dotenv
 SUPABASE_URL=XXX
 SUPABASE_STORAGE=XXX
 SUPABASE_ANON_KEY=XXX
 ```
 
-First, run the development server:
+### Install packages
+
+Install all required packages with following command:
+```bash
+yarn install
+```
+
+## Development
+Run the development server:
 
 ```bash
 yarn dev

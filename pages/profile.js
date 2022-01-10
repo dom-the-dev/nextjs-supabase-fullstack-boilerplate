@@ -22,6 +22,9 @@ export async function getServerSideProps({req}) {
     const {user} = await supabase.auth.api.getUserByCookie(req)
 
     if (!user) {
+        // force supabase sign out
+        await supabase.auth.signOut()
+
         return {
             props: {expired: true}, redirect: {destination: '/login'}
         }

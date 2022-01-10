@@ -3,13 +3,29 @@
 }
 
 .main {
-  min-height: 100vh;
+  min-height: 600px;
   padding: 4rem 0;
-  flex: 1;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  padding: 1rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+}
+
+.headerNav {
+  list-style-type: none;
+}
+
+.headerLink {
+  padding: 0 1rem;
+}
+
+.headerLink:hover {
+  color: blue;
 }
 
 .footer {
